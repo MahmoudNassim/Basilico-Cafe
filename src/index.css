@@ -1,7 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sue+Ellen+Francisco&display=swap");
+
 @import "tailwindcss";
 
 body {
   font-family: "Oswald", sans-serif;
+}
+:root {
+  --swiper-theme-color: white !important;
+}
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  position: relative !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
+  background: none !important;
+  border: 2px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: none !important;
+  border: 2px solid #c1a07b !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.swiper-pagination-bullet::after {
+  content: "" !important;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-pagination {
+  bottom: 100px !important;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .swiper-pagination {
+    bottom: 50px !important;
+  }
 }

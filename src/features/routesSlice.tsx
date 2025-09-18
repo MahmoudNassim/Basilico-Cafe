@@ -18,12 +18,12 @@ type RouteState = {
 }
 const initialState: RouteState = {
   routes: [
-    { name: "Home", path: "/", element: <HomePage /> },
-    { name: "Menu", path: "/menu", element: <MenuPage /> },
-    { name: "Reservation", path: "/reservation", element: <ReservationPage /> },
-    { name: "Shop", path: "/shop", element: <ShopPage /> },
-    { name: "Blog", path: "/blog", element: <BlogPage /> },
-    { name: "About", path: "/about", element: <AboutPage /> },
+    { name: "HOME", path: "/", element: <HomePage /> },
+    { name: "MENU", path: "/menu", element: <MenuPage /> },
+    { name: "RESERVATION", path: "/reservation", element: <ReservationPage /> },
+    { name: "SHOP", path: "/shop", element: <ShopPage /> },
+    { name: "BLOG", path: "/blog", element: <BlogPage /> },
+    { name: "ABOUT", path: "/about", element: <AboutPage /> },
   ],
 }
 
