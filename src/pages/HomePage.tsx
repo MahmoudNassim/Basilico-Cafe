@@ -8,6 +8,9 @@ import hero2 from "../assets/images/Herosection-2.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import OpeningHours from "../components/HomeComponents/OpeningHours";
+import Bakery from "../components/HomeComponents/Bakery";
+import MenuComponent from "../components/MenuComponent";
 
 const HomePage = () => {
   type slides = {
@@ -30,7 +33,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div>
+    <div className="w-full h-[100vh] pb-20">
       <div className="relative ">
         <Swiper
           modules={[Pagination, EffectFade]}
@@ -51,32 +54,47 @@ const HomePage = () => {
           ))}
         </Swiper>
       </div>
-      <div>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa
-          labore numquam suscipit repudiandae recusandae dolore sit! Distinctio
-          perspiciatis eaque quos qui sint maxime voluptates quis, a impedit
-          officiis atque.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa
-          labore numquam suscipit repudiandae recusandae dolore sit! Distinctio
-          perspiciatis eaque quos qui sint maxime voluptates quis, a impedit
-          officiis atque.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa
-          labore numquam suscipit repudiandae recusandae dolore sit! Distinctio
-          perspiciatis eaque quos qui sint maxime voluptates quis, a impedit
-          officiis atque.
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa
-          labore numquam suscipit repudiandae recusandae dolore sit! Distinctio
-          perspiciatis eaque quos qui sint maxime voluptates quis, a impedit
-          officiis atque.
-        </h1>
-      </div>
+      <OpeningHours />
+      <Bakery />
+      <MenuComponent />
+      {/* <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          officiis, autem veritatis voluptate illum reprehenderit voluptatem
+          perferendis. Expedita blanditiis et repellat aspernatur odit sit
+          obcaecati accusantium nemo! Quod, ducimus laborum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          officiis, autem veritatis voluptate illum reprehenderit voluptatem
+          perferendis. Expedita blanditiis et repellat aspernatur odit sit
+          obcaecati accusantium nemo! Quod, ducimus laborum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          officiis, autem veritatis voluptate illum reprehenderit voluptatem
+          perferendis. Expedita blanditiis et repellat aspernatur odit sit
+          obcaecati accusantium nemo! Quod, ducimus laborum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          officiis, autem veritatis voluptate illum reprehenderit voluptatem
+          perferendis. Expedita blanditiis et repellat aspernatur odit sit
+          obcaecati accusantium nemo! Quod, ducimus laborum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          officiis, autem veritatis voluptate illum reprehenderit voluptatem
+          perferendis. Expedita blanditiis et repellat aspernatur odit sit
+          obcaecati accusantium nemo! Quod, ducimus laborum?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          officiis, autem veritatis voluptate illum reprehenderit voluptatem
+          perferendis. Expedita blanditiis et repellat aspernatur odit sit
+          obcaecati accusantium nemo! Quod, ducimus laborum?
+        </p>
+      </div> */}
     </div>
   );
 };

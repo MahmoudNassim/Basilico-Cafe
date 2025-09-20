@@ -3,10 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sue+Ellen+Francisco&display=swap");
 
 @import "tailwindcss";
-
+@plugin "daisyui";
 body {
   font-family: "Oswald", sans-serif;
 }
+body.offcanvas-open .swiper-pagination {
+  display: none !important;
+}
+
 :root {
   --swiper-theme-color: white !important;
 }

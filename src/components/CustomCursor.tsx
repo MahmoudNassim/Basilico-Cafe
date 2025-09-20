@@ -41,8 +41,9 @@ export default function CustomCursor() {
     >
       <div className="w-10 h-10 rounded-full border-2 border-[#C3A27C] opacity-50 relative flex items-center justify-center">
         <div
-          className={`rounded-full bg-[#C3A27C] transition-all duration-300 ease-out ${hovered ? "w-9 h-9 opacity-70" : "w-2 h-2"
-            }`}
+          className={`rounded-full bg-[#C3A27C] transition-all duration-300 ease-out ${
+            hovered ? "w-9 h-9 opacity-70" : "w-2 h-2"
+          }`}
         />
       </div>
     </div>
