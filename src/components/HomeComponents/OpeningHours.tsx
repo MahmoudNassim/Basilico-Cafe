@@ -1,5 +1,5 @@
-import barista from "../../assets/images/about-3.jpg";
-import bg from "../../assets/images/bg1.png";
+import barista from "../../assets/images/Home/about-3.jpg";
+import bg from "../../assets/images/Home/bg1.png";
 
 type Hour = {
   day: string;

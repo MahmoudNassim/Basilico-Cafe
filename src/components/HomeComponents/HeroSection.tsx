@@ -1,5 +1,5 @@
 import Header from "../Header/Header";
-import wave from "../../assets/images/wave.png";
+import wave from "../../assets/images/Home/wave.png";
 
 type Props = {
   backgroundImage?: string;

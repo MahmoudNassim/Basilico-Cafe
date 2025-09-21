@@ -1,7 +1,7 @@
 import { TbMenu4 } from "react-icons/tb";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo-dark.png";
+import logo from "../../assets/images/Home/logo-dark.png";
 import { FaSearch } from "react-icons/fa";
 import { MdShoppingBag } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";

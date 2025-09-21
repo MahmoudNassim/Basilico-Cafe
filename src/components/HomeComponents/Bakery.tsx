@@ -1,7 +1,7 @@
-import bg from "../../assets/images/bg-service.png";
-import bakery from "../../assets/images/bakery.jpg";
-import breakfast from "../../assets/images/breakfast.jpg";
-import cup from "../../assets/images/cup-caffee.jpg";
+import bg from "../../assets/images/Home/bg-service.png";
+import bakery from "../../assets/images/Home/bakery.jpg";
+import breakfast from "../../assets/images/Home/breakfast.jpg";
+import cup from "../../assets/images/Home/cup-caffee.jpg";
 import { CiCoffeeCup } from "react-icons/ci";
 import { MdBakeryDining } from "react-icons/md";
 import { MdFastfood } from "react-icons/md";
@@ -39,7 +39,7 @@ const Bakery = () => {
   ];
 
   return (
-    <div className="mt-20 lg:mt-40 mb-10 min-lg:pt-10">
+    <div className="mt-20 lg:mt-40 mb-10 xl:mb-0 lg:h-[60vh] xl:h-[80vh] min-lg:pt-10">
       <div
         className="h-[400px] bg-cover bg-center hidden bg-no-repeat lg:block "
         style={{ backgroundImage: `url(${bg})` }}
@@ -63,7 +63,7 @@ interface CardProps {
 const Card = (props: CardProps) => {
   return (
     <div
-      className="lg:h-[537px] h-[327px] lg:w-[370px] md:w-[200px] w-full relative group bg-cover bg-no-repeat rounded-2xl 
+      className="lg:h-[537px] h-[327px] xl:w-[370px] md:w-[200px] lg:w-[250px] w-full relative group bg-cover bg-no-repeat rounded-2xl 
       flex justify-center items-end pb-20 "
       style={{ backgroundImage: `url(${props.image})` }}
     >

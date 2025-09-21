@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import logo from "../../assets/images/logo-dark.png";
+import logo from "../../assets/images/Home/logo-dark.png";
 import { IoMdClose } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
