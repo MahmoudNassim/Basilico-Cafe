@@ -1,7 +1,7 @@
 import { TbMenu4 } from "react-icons/tb";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/Home/logo-dark.png";
+import logo from "../../assets/images/Home/logo.png";
 import { FaSearch } from "react-icons/fa";
 import { MdShoppingBag } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
@@ -84,12 +84,12 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <div className="w-[25%] max-md:w-[33%]  flex justify-center items-center cursor-pointer  rounded-full">
+        <div className="md:w-[120px] md:h-[120px] lg:h-[150px] lg:w-[150px] w-[70px] h-[70px] bg-[#FAF1E3]  flex justify-center items-center cursor-pointer  rounded-full">
           <Link to="/">
             <img
               src={logo}
               alt=""
-              className="w-20 h-20 max-md:w-17 max-md:h-17  outline-[10px] outline-[#FAF1E3]  rounded-full "
+              className="md:w-[100px] md:h-[100px]  w-[50px] h-[50px]   rounded-full "
             />
           </Link>
         </div>
