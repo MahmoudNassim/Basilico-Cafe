@@ -39,12 +39,13 @@ const Bakery = () => {
   ];
 
   return (
-    <div className="mt-20 lg:mt-40 mb-10 xl:mb-0 lg:h-[60vh] xl:h-[80vh] min-lg:pt-10">
+    <div className="mt-20 lg:mt-40 mb-10 xl:mb-44   min-lg:pt-10 lg:relative">
       <div
         className="h-[400px] bg-cover bg-center hidden bg-no-repeat lg:block "
         style={{ backgroundImage: `url(${bg})` }}
       ></div>
-      <div className=" p-5 flex flex-wrap justify-center gap-7 min-lg:-translate-y-[60vh]">
+      <div className=" p-5 flex flex-wrap lg:flex-nowrap justify-center gap-7 lg:absolute top-0 left-1/2 -translate-x-1/2 ">
+        {" "}
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}
@@ -73,7 +74,7 @@ const Card = (props: CardProps) => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black   opacity-50 group-hover:opacity-75  rounded-2xl transition-opacity duration-300 " />
 
-      <div className="relative z-10 flex flex-col items-center justify-center   lg:group-hover:-translate-y-20 duration-300 ">
+      <div className="relative z-10 flex flex-col items-center justify-center   lg:group-hover:-translate-y-20 transition-all duration-300 ">
         {props.icon}
         <h2 className="text-white text-2xl lg:text-4xl font-bold hover:text-[#C3A27C] cursor-pointer cursor-hover ">
           {" "}

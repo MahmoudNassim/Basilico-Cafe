@@ -13,6 +13,8 @@ import OpeningHours from "../components/HomeComponents/OpeningHours";
 import Bakery from "../components/HomeComponents/Bakery";
 import MenuComponent from "../components/MenuComponent";
 import ChooseUs from "../components/HomeComponents/ChooseUs";
+import PrivateEvent from "../components/HomeComponents/PrivateEvent";
+import Customer from "../components/HomeComponents/Customer";
 
 const HomePage = () => {
   type slides = {
@@ -73,6 +75,8 @@ const HomePage = () => {
       </h2>
       <MenuComponent />
       <ChooseUs />
+      <PrivateEvent />
+      <Customer />
       {/* <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia

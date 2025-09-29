@@ -20,7 +20,7 @@ const OpeningHours = () => {
   ];
 
   return (
-    <div className="w-full min-h-[100vh] lg:mb-32 xl:mb-0 flex flex-col relative items-center p-2 ">
+    <div className="w-full lg:mb-20 xl:mb-0 flex flex-col relative items-center p-2 ">
       <div className="absolute right-7 -bottom-3 max-lg:hidden">
         <img src={bg} alt="" />
       </div>
@@ -33,7 +33,7 @@ const OpeningHours = () => {
           />
         </div>
         <div
-          className="shadow-2xl rounded-2xl bg-white lg:w-[25%] w-[100%] lg:min-h-[70vh] max-h-[120vh]
+          className="shadow-2xl rounded-2xl bg-white lg:w-[350px] w-fit lg:max-h-[800px] 
           lg:translate-y-30 lg:-translate-x-10 p-4 "
         >
           <p

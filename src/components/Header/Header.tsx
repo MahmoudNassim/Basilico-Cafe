@@ -37,7 +37,7 @@ const Header = () => {
   };
 
   return (
-    <div className=" w-full max-md:py-2   text-white">
+    <div className=" w-full max-md:py-2   text-white container mx-auto">
       <div className="md:flex hidden justify-between px-10 py-5 ">
         <div className="flex gap-3 items-center ">
           <div className="bg-[#C3A27C] rounded-full w-12 h-12 flex justify-center items-center">

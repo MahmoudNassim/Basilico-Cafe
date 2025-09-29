@@ -85,7 +85,7 @@ const MenuComponent = () => {
   ];
 
   return (
-    <div className="py-10 flex justify-center px-4 md:px-6">
+    <div className="py-10 flex justify-center px-4 md:px-6 container mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {menu.map((el) => (
           <div
