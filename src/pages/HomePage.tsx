@@ -81,7 +81,7 @@ const HomePage = () => {
       <Customer />
       <BrandsSwiper />
       <Latestnews />
-      {/* <div>
+      <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
           officiis, autem veritatis voluptate illum reprehenderit voluptatem
@@ -118,7 +118,7 @@ const HomePage = () => {
           perferendis. Expedita blanditiis et repellat aspernatur odit sit
           obcaecati accusantium nemo! Quod, ducimus laborum?
         </p>
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -49,11 +49,6 @@ const Customer = () => {
         src={wave}
         alt=""
       />
-      {/* <img
-        className="absolute -bottom-[20px] left-1/2 -translate-x-1/2 rotate-180  max-md:hidden"
-        src={wave}
-        alt=""
-      /> */}
     </div>
   );
 };
