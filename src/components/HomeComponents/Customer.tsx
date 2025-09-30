@@ -8,7 +8,7 @@ const Customer = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
-      className="relative my-32 p-10 bg-cover bg-no-repeat w-full flex justify-center items-center  bg-center h-[700px] max-md:h-[120vh]"
+      className="relative mt-32 p-10 bg-cover bg-no-repeat w-full flex justify-center items-center  bg-center h-[700px] max-md:h-[120vh]"
     >
       <div className="absolute top-0 left-0 z-0 inset-0 bg-black opacity-40" />
       <img
@@ -49,11 +49,11 @@ const Customer = () => {
         src={wave}
         alt=""
       />
-      <img
-        className="absolute -bottom-[20px] left-1/2 -translate-x-1/2  max-md:hidden"
+      {/* <img
+        className="absolute -bottom-[20px] left-1/2 -translate-x-1/2 rotate-180  max-md:hidden"
         src={wave}
         alt=""
-      />
+      /> */}
     </div>
   );
 };

@@ -39,12 +39,12 @@ const Bakery = () => {
   ];
 
   return (
-    <div className="mt-20 lg:mt-40 mb-10 xl:mb-44   min-lg:pt-10 lg:relative">
+    <div className="mt-20 lg:mt-40 mb-10 lg:mb-44   min-lg:pt-10 lg:relative">
       <div
         className="h-[400px] bg-cover bg-center hidden bg-no-repeat lg:block "
         style={{ backgroundImage: `url(${bg})` }}
       ></div>
-      <div className=" p-5 flex flex-wrap lg:flex-nowrap justify-center gap-7 lg:absolute top-0 left-1/2 -translate-x-1/2 ">
+      <div className=" p-5 flex flex-wrap lg:flex-nowrap justify-center gap-7 lg:absolute top-0 left-1/2 lg:-translate-x-1/2 ">
         {" "}
         {cards.map((card, index) => (
           <Card key={index} {...card} />

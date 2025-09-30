@@ -15,6 +15,8 @@ import MenuComponent from "../components/MenuComponent";
 import ChooseUs from "../components/HomeComponents/ChooseUs";
 import PrivateEvent from "../components/HomeComponents/PrivateEvent";
 import Customer from "../components/HomeComponents/Customer";
+import BrandsSwiper from "../components/BrandsSwiper";
+import Latestnews from "../components/HomeComponents/Latestnews";
 
 const HomePage = () => {
   type slides = {
@@ -77,6 +79,8 @@ const HomePage = () => {
       <ChooseUs />
       <PrivateEvent />
       <Customer />
+      <BrandsSwiper />
+      <Latestnews />
       {/* <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
