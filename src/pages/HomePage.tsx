@@ -40,7 +40,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="w-full h-[100vh] pb-20">
+    <div className="w-full min-h-screen pb-20">
       <div className="relative ">
         <Swiper
           modules={[Pagination, EffectFade]}
@@ -83,44 +83,6 @@ const HomePage = () => {
       <BrandsSwiper />
       <Latestnews />
       <OurLocation />
-      {/* <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          officiis, autem veritatis voluptate illum reprehenderit voluptatem
-          perferendis. Expedita blanditiis et repellat aspernatur odit sit
-          obcaecati accusantium nemo! Quod, ducimus laborum?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          officiis, autem veritatis voluptate illum reprehenderit voluptatem
-          perferendis. Expedita blanditiis et repellat aspernatur odit sit
-          obcaecati accusantium nemo! Quod, ducimus laborum?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          officiis, autem veritatis voluptate illum reprehenderit voluptatem
-          perferendis. Expedita blanditiis et repellat aspernatur odit sit
-          obcaecati accusantium nemo! Quod, ducimus laborum?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          officiis, autem veritatis voluptate illum reprehenderit voluptatem
-          perferendis. Expedita blanditiis et repellat aspernatur odit sit
-          obcaecati accusantium nemo! Quod, ducimus laborum?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          officiis, autem veritatis voluptate illum reprehenderit voluptatem
-          perferendis. Expedita blanditiis et repellat aspernatur odit sit
-          obcaecati accusantium nemo! Quod, ducimus laborum?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          officiis, autem veritatis voluptate illum reprehenderit voluptatem
-          perferendis. Expedita blanditiis et repellat aspernatur odit sit
-          obcaecati accusantium nemo! Quod, ducimus laborum?
-        </p>
-      </div> */}
     </div>
   );
 };
