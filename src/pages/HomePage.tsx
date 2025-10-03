@@ -17,6 +17,7 @@ import PrivateEvent from "../components/HomeComponents/PrivateEvent";
 import Customer from "../components/HomeComponents/Customer";
 import BrandsSwiper from "../components/BrandsSwiper";
 import Latestnews from "../components/HomeComponents/Latestnews";
+import OurLocation from "../components/OurLocation";
 
 const HomePage = () => {
   type slides = {
@@ -81,7 +82,8 @@ const HomePage = () => {
       <Customer />
       <BrandsSwiper />
       <Latestnews />
-      <div>
+      <OurLocation />
+      {/* <div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
           officiis, autem veritatis voluptate illum reprehenderit voluptatem
@@ -118,7 +120,7 @@ const HomePage = () => {
           perferendis. Expedita blanditiis et repellat aspernatur odit sit
           obcaecati accusantium nemo! Quod, ducimus laborum?
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
