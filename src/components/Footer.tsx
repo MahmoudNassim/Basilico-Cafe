@@ -5,7 +5,6 @@ import logo from "../assets/images/Home/logo-dark.png";
 import { FaInstagram, FaTelegramPlane, FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-import { TbBrandYoutube } from "react-icons/tb";
 
 type Hour = {
   day: string;

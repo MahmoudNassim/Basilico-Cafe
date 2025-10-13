@@ -8,14 +8,14 @@ import BlogPage from "../pages/BlogPage";
 import AboutPage from "../pages/AboutPage";
 
 type Route = {
-  name: string,
-  path: string,
-  element: React.ReactElement
-}
+  name: string;
+  path: string;
+  element: React.ReactElement;
+};
 
 type RouteState = {
-  routes: Route[]
-}
+  routes: Route[];
+};
 const initialState: RouteState = {
   routes: [
     { name: "HOME", path: "/", element: <HomePage /> },
@@ -25,11 +25,11 @@ const initialState: RouteState = {
     { name: "BLOG", path: "/blog", element: <BlogPage /> },
     { name: "ABOUT", path: "/about", element: <AboutPage /> },
   ],
-}
+};
 
 const routesSlice = createSlice({
   name: "routes",
   initialState,
-  reducers: {}
-})
-export default routesSlice.reducer 
+  reducers: {},
+});
+export default routesSlice.reducer;

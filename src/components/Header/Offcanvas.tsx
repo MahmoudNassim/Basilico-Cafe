@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import logo from "../../assets/images/Home/logo-dark.png";
 import { IoMdClose } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
 
 type openOffCanvas = {
   open: boolean;
@@ -12,9 +11,7 @@ type openOffCanvas = {
 const Offcanvas = ({ open, setOpen }: openOffCanvas) => {
   const route = useSelector((state: any) => state.routes.routes);
   const location = useLocation();
-  useEffect(() => {
-    console.log(location.pathname);
-  }, []);
+
   return (
     <>
       <div
