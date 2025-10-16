@@ -108,7 +108,7 @@ const CakeAndBakery = () => {
             </p>
           ))}
         </div>
-        <hr className="text-[#dedede] w-[400px] text-center " />
+        <hr className="text-[#dedede] w-full md:w-[400px] text-center " />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5 w-full p-2 xl:w-[80%] ">
         {filteredCategory.map((card) => (
@@ -122,11 +122,13 @@ const CakeAndBakery = () => {
               variants={{}}
               className="overflow-hidden rounded-2xl relative "
             >
-              <img
-                src={card.img}
-                alt={card.title}
-                className="w-full h-auto rounded-2xl"
-              />
+              <div className="w-[250px]">
+                <img
+                  src={card.img}
+                  alt={card.title}
+                  className="w-full h-auto rounded-2xl"
+                />
+              </div>
 
               <motion.div
                 variants={{
