@@ -13,9 +13,6 @@ interface HeroSectionProps {
   path?: string;
 }
 const HeroSectionComponent = (props: HeroSectionProps) => {
-  useEffect(() => {
-    console.log(location);
-  }, []);
   return (
     <div
       style={{

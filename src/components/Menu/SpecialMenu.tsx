@@ -54,7 +54,7 @@ const SpecialMenu = () => {
       style={{
         backgroundImage: `url(${bg})`,
       }}
-      className="bg-no-repeat h-[800px] w-full my-10 relative flex flex-col justify-center items-center "
+      className=" h-[800px] mx-auto w-full my-10 relative flex flex-col justify-center items-center "
     >
       <img className="absolute top-0 left-0" src={coffee} alt="" />
       <img className="absolute bottom-0 right-0" src={cup} alt="" />
@@ -70,7 +70,7 @@ const SpecialMenu = () => {
       <h2 className="text-5xl max-md:text-3xl leading-14 font-extrabold text-white uppercase my-2 text-center">
         definite coffee you must try
       </h2>
-      <div className="relative w-[90%] mt-8">
+      <div className="relative w-[90%] mt-8 container mx-auto">
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -109,7 +109,7 @@ const SpecialMenu = () => {
                   {post.name}
                 </h2>
                 <p
-                  style={{ fontFamily: "DM SANS , Sans Serif" }}
+                  style={{ fontFamily: "DM Sans , sans-serif" }}
                   className="text-[#c3a27c] text-[15px] leading-[28px] text-center"
                 >
                   {post.ingredients}

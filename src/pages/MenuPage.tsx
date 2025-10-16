@@ -2,6 +2,7 @@ import HeroSectionComponent from "../components/HeroSectionComponent";
 import bg from "../assets/images/Menu/bg-menu.jpg";
 import MenuComponent from "../components/MenuComponent";
 import SpecialMenu from "../components/Menu/SpecialMenu";
+import CakeAndBakery from "../components/Menu/CakeAndBakery";
 
 const MenuPage = () => {
   return (
@@ -14,6 +15,7 @@ const MenuPage = () => {
       />
       <MenuComponent />
       <SpecialMenu />
+      <CakeAndBakery />
     </div>
   );
 };
