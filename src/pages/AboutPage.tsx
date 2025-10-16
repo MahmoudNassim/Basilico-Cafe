@@ -1,7 +1,17 @@
-import Header from "../components/Header/Header";
+import bg from "../assets/images/About/bg-about.jpg";
+import HeroSectionComponent from "../components/HeroSectionComponent";
 
 const AboutPage = () => {
-  return <div>About Page</div>;
+  return (
+    <div>
+      <HeroSectionComponent
+        backgroundImage={bg}
+        title="about us"
+        subtitle="- discovery of basilico coffee -"
+        path="about us"
+      />
+    </div>
+  );
 };
 
 export default AboutPage;
