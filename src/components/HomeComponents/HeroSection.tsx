@@ -1,4 +1,3 @@
-import Header from "../Header/Header";
 import wave from "../../assets/images/Home/wave.png";
 
 type Props = {
@@ -9,13 +8,12 @@ type Props = {
 const HeroSection = ({ backgroundImage, firstTitle, secondTitle }: Props) => {
   return (
     <div
-      className="h-screen  overflow-hidden relative bg-no-repeat bg-cover bg-center   "
+      className="h-screen  overflow-hidden relative bg-no-repeat bg-cover bg-center flex justify-center items-center   "
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
       <div className="absolute bg-black top-0 left-0 w-full h-full z-[1] opacity-50" />
       <div className="relative z-3 min-lg:py-5 flex flex-col items-center w-[100%]">
         <div className="xl:w-[85%] lg:w-[90%]  w-full flex flex-col gap-4 text-white">
-          <Header />
           <h2
             className="text-[#f6e7d0] 
               text-2xl md:text-4xl 

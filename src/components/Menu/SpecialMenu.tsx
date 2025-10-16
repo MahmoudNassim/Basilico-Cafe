@@ -128,13 +128,13 @@ const SpecialMenu = () => {
 
         {/* Navigation Buttons */}
         <button
-          className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[#c3a27c] text-white p-3 rounded-full shadow-lg z-10 hidden
+          className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-[#c3a27c] text-white p-3 rounded-full shadow-lg z-0 hidden
               lg:block cursor-pointer"
         >
           <FaArrowLeft />
         </button>
         <button
-          className="custom-next absolute right-0 top-1/2 -translate-y-1/2 bg-[#c3a27c] text-white p-3 rounded-full shadow-lg z-10 hidden
+          className="custom-next absolute right-0 top-1/2 -translate-y-1/2 bg-[#c3a27c] text-white p-3 rounded-full shadow-lg z-0 hidden
               lg:block cursor-pointer"
         >
           <FaArrowRight />

@@ -18,6 +18,7 @@ import Customer from "../components/HomeComponents/Customer";
 import BrandsSwiper from "../components/BrandsSwiper";
 import Latestnews from "../components/HomeComponents/Latestnews";
 import OurLocation from "../components/OurLocation";
+import Header from "../components/Header/Header";
 
 const HomePage = () => {
   type slides = {

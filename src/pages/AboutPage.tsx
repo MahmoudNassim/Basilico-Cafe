@@ -1,9 +1,7 @@
-import Header from "../components/Header/Header"
+import Header from "../components/Header/Header";
 
 const AboutPage = () => {
-  return (
-    <Header />
-  )
-}
+  return <div>About Page</div>;
+};
 
-export default AboutPage
+export default AboutPage;

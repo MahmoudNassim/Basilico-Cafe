@@ -3,6 +3,7 @@ import CustomCursor from "./components/CustomCursor";
 import MenuPage from "./pages/MenuPage";
 import { useSelector } from "react-redux";
 import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
   const routes = useSelector((state: any) => state.routes.routes);
@@ -10,6 +11,8 @@ function App() {
 
   return (
     <div>
+      <Header />
+
       <Routes>
         {routes.map((route: any) => (
           <Route key={route.id} path={route.path} element={route.element} />

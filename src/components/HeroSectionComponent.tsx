@@ -1,7 +1,6 @@
 import bg from "../assets/images/Menu/bg-menu.jpg";
 import cup from "../assets/images/Menu/cup.png";
 import cup2 from "../assets/images/Menu/cup-1.png";
-import Header from "./Header/Header";
 import wave from "../assets/images/Home/wave.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -19,11 +18,10 @@ const HeroSectionComponent = (props: HeroSectionProps) => {
         backgroundImage: `url(${props.backgroundImage || bg})`,
         backgroundSize: "cover",
       }}
-      className="w-full h-[650px] mb-10 flex justify-center bg-no-repeat pt-3 text-white relative overflow-hidden"
+      className="w-full h-screen mb-10 flex justify-center items-center bg-no-repeat pt-5 text-white relative overflow-hidden"
     >
       <div className="absolute inset-0 bg-black opacity-50" />
-      <div className="relative z-10 w-full lg:w-[85%] flex flex-col justify-between">
-        <Header />
+      <div className=" z-10 w-full lg:w-[85%] flex flex-col ">
         <div className="flex flex-col items-center justify-center pt-20 ">
           <p
             className="text-[#f6e7d0] leading-16 text-[40px] max-md:text-[35px]"
@@ -38,7 +36,7 @@ const HeroSectionComponent = (props: HeroSectionProps) => {
 
         <div
           style={{ fontFamily: "DM Sans, sans-serif" }}
-          className="flex justify-center gap-2 text-lg my-10"
+          className="flex justify-center gap-2 text-lg my-10 absolute bottom-0 left-1/2 -translate-x-1/2"
         >
           <Link
             className="uppercase tracking-wider text-[16px] custom-hover"
