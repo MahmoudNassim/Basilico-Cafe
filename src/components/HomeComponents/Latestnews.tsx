@@ -53,7 +53,7 @@ const blogPosts: BlogPost[] = [
   },
 ];
 
-const Latestnews: React.FC = () => {
+const Latestnews = () => {
   return (
     <div className="container mx-auto p-4 flex flex-col items-center text-center gap-4 ">
       <h4
