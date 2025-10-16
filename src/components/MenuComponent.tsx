@@ -1,3 +1,4 @@
+import { PiCoffeeBeanFill } from "react-icons/pi";
 import coffe1 from "../assets/images/Menu/coffee-1.png";
 import coffe2 from "../assets/images/Menu/coffee-2.png";
 import coffe3 from "../assets/images/Menu/coffee-3.png";
@@ -14,6 +15,7 @@ interface MenuItem {
   price: number;
   image: string;
   status: string;
+  type?: "hot" | "cold";
 }
 
 const MenuComponent = () => {
@@ -25,6 +27,7 @@ const MenuComponent = () => {
       price: 2.95,
       image: coffe1,
       status: "normal",
+      type: "hot",
     },
     {
       id: 2,
@@ -33,6 +36,7 @@ const MenuComponent = () => {
       price: 3.95,
       image: coffe2,
       status: "normal",
+      type: "hot",
     },
     {
       id: 3,
@@ -41,6 +45,7 @@ const MenuComponent = () => {
       price: 4.95,
       image: coffe3,
       status: "new",
+      type: "hot",
     },
     {
       id: 4,
@@ -49,6 +54,7 @@ const MenuComponent = () => {
       price: 4.95,
       image: coffe4,
       status: "normal",
+      type: "hot",
     },
     {
       id: 5,
@@ -57,6 +63,7 @@ const MenuComponent = () => {
       price: 2.95,
       image: coffe5,
       status: "normal",
+      type: "cold",
     },
     {
       id: 6,
@@ -65,6 +72,7 @@ const MenuComponent = () => {
       price: 3.95,
       image: coffe6,
       status: "trending",
+      type: "cold",
     },
     {
       id: 7,
@@ -73,6 +81,7 @@ const MenuComponent = () => {
       price: 4.95,
       image: coffe7,
       status: "normal",
+      type: "cold",
     },
     {
       id: 8,
@@ -81,63 +90,79 @@ const MenuComponent = () => {
       price: 5.95,
       image: coffe8,
       status: "normal",
+      type: "cold",
     },
   ];
+
+  const hotDrinks = menu.filter((item) => item.type === "hot");
+  const coldDrinks = menu.filter((item) => item.type === "cold");
 
   return (
     <div className="py-10 flex justify-center px-4 md:px-6 container mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        {menu.map((el) => (
-          <div
-            key={el.id}
-            className={`flex flex-col relative w-full ${
-              el.status !== "normal" ? "pt-10" : ""
-            } `}
-          >
-            {el.status !== "normal" && (
-              <div className="absolute top-0 left-0 right-0 h-10 bg-[#2D2723] text-white flex items-center px-4 rounded-t-xl">
-                <span className="font-bold text-sm">
-                  {el.status.toUpperCase()}/ SEASON
-                </span>
-              </div>
-            )}
-            <div
-              className={`w-full p-4 md:p-5 flex flex-row items-center gap-4 md:gap-3 ${
-                el.status !== "normal"
-                  ? "border border-[#2D2723] rounded-b-xl rounded-t-none"
-                  : ""
-              }`}
-            >
-              <div className="flex-shrink-0">
-                <img
-                  src={el.image}
-                  alt={el.name}
-                  className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover"
-                />
-              </div>
-              <div className="flex flex-col justify-center flex-grow min-w-0">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <h3 className="leading-tight text-lg md:text-[22px] font-medium hover:text-[#c3a27c] cursor-pointer whitespace-nowrap overflow-hidden text-ellipsis">
-                    {el.name}
-                  </h3>
-                  <span className="flex-grow border-b border-dashed border-gray-400 opacity-50 min-w-[20px]"></span>
-                  <p className="leading-tight text-lg md:text-[22px] font-medium text-[#c3a27c] whitespace-nowrap">
-                    ${el.price.toFixed(2)}
-                  </p>
-                </div>
-                <p
-                  style={{ fontFamily: "DM Sans" }}
-                  className="text-[#666] leading-6 text-sm md:text-[15px] mt-1"
-                >
-                  {el.description}{" "}
-                </p>{" "}
-              </div>
-            </div>
-          </div>
-        ))}
+        <Section items={hotDrinks} title="hot Drinks" />
+        <Section items={coldDrinks} title="cold Drinks" />
       </div>
     </div>
   );
 };
 
+const Section = ({ title, items }: { title: string; items: MenuItem[] }) => (
+  <div className="flex flex-col gap-6">
+    <p className="text-[32px] md:text-[45px] font-bold leading-[58px] text-[#171412] uppercase flex items-center justify-center gap-3 w-full">
+      <PiCoffeeBeanFill className="text-[#C3A27C] text-[20px]" />
+      {title}
+      <PiCoffeeBeanFill className="text-[#C3A27C] text-[20px]" />
+    </p>
+
+    {items.map((el) => (
+      <div
+        key={el.id}
+        className={`flex flex-col relative w-full ${
+          el.status !== "normal" ? "pt-10" : ""
+        }`}
+      >
+        {el.status !== "normal" && (
+          <div className="absolute top-0 left-0 right-0 h-10 bg-[#2D2723] text-white flex items-center px-4 rounded-t-xl">
+            <span className="font-bold text-sm">
+              {el.status.toUpperCase()}/ SEASON
+            </span>
+          </div>
+        )}
+        <div
+          className={`w-full p-4 md:p-5 flex flex-row items-center gap-4 md:gap-3 ${
+            el.status !== "normal"
+              ? "border border-[#2D2723] rounded-b-xl rounded-t-none"
+              : ""
+          }`}
+        >
+          <div className="flex-shrink-0">
+            <img
+              src={el.image}
+              alt={el.name}
+              className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col justify-center flex-grow min-w-0">
+            <div className="flex items-center gap-2 md:gap-3">
+              <h3 className="leading-tight text-lg md:text-[22px] font-medium hover:text-[#c3a27c] cursor-pointer whitespace-nowrap overflow-hidden text-ellipsis">
+                {el.name}
+              </h3>
+              <span className="flex-grow border-b border-dashed border-gray-400 opacity-50 min-w-[20px]"></span>
+              <p className="leading-tight text-lg md:text-[22px] font-medium text-[#c3a27c] whitespace-nowrap">
+                ${el.price.toFixed(2)}
+              </p>
+            </div>
+            <p
+              style={{ fontFamily: "DM Sans" }}
+              className="text-[#666] leading-6 text-sm md:text-[15px] mt-1"
+            >
+              {el.description}
+            </p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
 export default MenuComponent;

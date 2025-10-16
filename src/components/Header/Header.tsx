@@ -79,12 +79,19 @@ const Header = () => {
 
         <div className="flex gap-7 text-xl leading-20 justify-center items-center w-[25%] max-lg:hidden">
           {beforeImage.map((route: any, index: number) => (
-            <Link key={index} to={route.path}>
+            <Link
+              className=" text-[14px] xl:text-[15px] font-semibold leading-[82px] tracking-widest xl:px-2 "
+              key={index}
+              to={route.path}
+            >
               {route.name}
             </Link>
           ))}
         </div>
-        <div className="md:w-[120px] md:h-[120px] lg:h-[150px] lg:w-[150px] w-[70px] h-[70px] bg-[#FAF1E3]  flex justify-center items-center cursor-pointer  rounded-full">
+        <div
+          className="md:w-[120px] md:h-[120px] lg:h-[130px] lg:w-[130px] xl:h-[150px] xl:w-[150px] w-[70px] h-[70px] bg-[#FAF1E3]  
+        flex justify-center items-center cursor-pointer  rounded-full"
+        >
           <Link to="/">
             <img
               src={logo}
@@ -95,7 +102,11 @@ const Header = () => {
         </div>
         <div className="flex gap-7 text-xl leading-20 w-[25%] max-lg:hidden ">
           {afterImage.map((route: any, index: number) => (
-            <Link key={index} to={route.path}>
+            <Link
+              className=" text-[14px] xl:text-[15px] font-semibold leading-[82px] tracking-widest xl:px-2 "
+              key={index}
+              to={route.path}
+            >
               {route.name}
             </Link>
           ))}
