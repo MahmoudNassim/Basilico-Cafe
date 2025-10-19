@@ -148,7 +148,7 @@ const Header = () => {
             <div className="border-l-1 border-white h-6 text-end max-lg:hidden " />
             <div className="relative">
               <MdShoppingBag className=" text-2xl text-end cursor-pointer " />
-              <span className="absolute -top-2 -right-2 bg-[#C3A27C] text-black text-xs font-bold rounded-full px-1.5">
+              <span className="absolute -top-2 -right-2 bg-[#C3A27C]  text-xs font-bold rounded-full px-1.5 text-white">
                 3
               </span>
             </div>

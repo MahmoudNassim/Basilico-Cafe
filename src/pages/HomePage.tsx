@@ -4,11 +4,6 @@ import { Pagination, EffectFade } from "swiper/modules";
 import hero from "../assets/images/Home/Herosection-1.jpg";
 import hero2 from "../assets/images/Home/Herosection-2.jpg";
 import { PiCoffeeBeanFill } from "react-icons/pi";
-
-// استايلات Swiper
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
 import OpeningHours from "../components/HomeComponents/OpeningHours";
 import Bakery from "../components/HomeComponents/Bakery";
 import MenuComponent from "../components/MenuComponent";
@@ -18,7 +13,11 @@ import Customer from "../components/HomeComponents/Customer";
 import BrandsSwiper from "../components/BrandsSwiper";
 import Latestnews from "../components/HomeComponents/Latestnews";
 import OurLocation from "../components/OurLocation";
-import Header from "../components/Header/Header";
+
+// استايلات Swiper
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 const HomePage = () => {
   type slides = {
