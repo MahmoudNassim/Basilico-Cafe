@@ -23,9 +23,9 @@ const Offcanvas = ({ open, setOpen }: openOffCanvas) => {
       <div
         className={`fixed  w-[350px] transition-transform duration-300 ${
           open ? "translate-x-0" : "-translate-x-full"
-        } left-0 top-0 h-full bg-[#2D2723] shadow-2xl z-[999] animate__animated animate__fadeIn`}
+        } left-0 top-0 h-[100vh] bg-[#2D2723] shadow-2xl z-[1000] animate__animated animate__fadeIn`}
       >
-        <div className="p-4 flex justify-between border-b-1 border-b-[#3E3530] pb-15">
+        <div className="p-4 flex justify-between border-b-1 border-b-[#3E3530] pb-15 max-md:mr-5">
           <img src={logo} alt="logo" />
           <button onClick={() => setOpen(false)}>
             <IoMdClose className="text-white text-2xl" />
