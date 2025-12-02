@@ -4,6 +4,8 @@ import ProductComponent from "../components/Shop/ProductComponent";
 import Cart from "../components/Shop/Cart";
 import Categories from "../components/Shop/Categories";
 import FilterPrice from "../components/Shop/FilterPrice";
+import RecentProduct from "../components/Shop/RecentProduct";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const ShopPage = () => {
   return (
     <div>
@@ -19,8 +21,32 @@ const ShopPage = () => {
           <Cart />
           <Categories />
           <FilterPrice />
+          <RecentProduct />
         </div>
       </div>
+      {/* <div className="flex gap-3 justify-center my-10">
+        <div className="w-12 h-12 border bg-[#C3A27C] border-[#C3A27C] rounded-full relative">
+          <span className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
+            1
+          </span>
+        </div>
+        <div
+          className="w-12 h-12 border  border-[#C3A27C] rounded-full relative
+          hover:bg-[#C3A27C] hover:text-white cursor-pointer cursor-hover transition-all duration-200"
+        >
+          <span className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+            2
+          </span>
+        </div>
+        <div
+          className="w-12 h-12 border  border-[#C3A27C] rounded-full relative
+          hover:bg-[#C3A27C] hover:text-white cursor-pointer cursor-hover transition-all duration-200"
+        >
+          <span className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+            <MdKeyboardDoubleArrowRight />
+          </span>
+        </div>
+      </div> */}
     </div>
   );
 };

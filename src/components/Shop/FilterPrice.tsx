@@ -110,7 +110,7 @@ const FilterPrice = () => {
         <div className="flex justify-between items-center mt-6">
           <button
             className="px-7 tracking-widest py-1 border-[#cbae8d] border rounded-2xl font-medium 
-           hover:text-[#cbae8d] hover:cursor-hover transition-all duration-200 text-[15px] leading-9"
+            hover:text-[#cbae8d] hover:cursor-hover transition-all duration-200 text-[15px] leading-9"
           >
             FILTER
           </button>
