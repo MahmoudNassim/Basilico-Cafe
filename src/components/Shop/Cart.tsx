@@ -1,7 +1,6 @@
 import { GrMoney } from "react-icons/gr";
 import coffee from "../../assets/images/Shop/product-1.png";
 import cup from "../../assets/images/Shop/product-6.png";
-import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
 const Cart = () => {
@@ -11,7 +10,7 @@ const Cart = () => {
   ];
 
   return (
-    <div className="bg-[#FAF1E3] max:w-[400px] rounded-[8px] max-md:m-2 pb-4">
+    <div className="bg-[#FAF1E3] max:w-[400px] rounded-[8px] max-md:m-2 pb-7">
       <div className="w-full bg-[#2D2723] rounded-t-[8px] p-4">
         <p className="text-[22px] leading-[33px] font-semibold tracking-wide text-white uppercase">
           cart
