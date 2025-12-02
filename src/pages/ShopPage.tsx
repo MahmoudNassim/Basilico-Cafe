@@ -3,6 +3,7 @@ import bg from "../assets/images/Shop/bg-shop.jpg";
 import ProductComponent from "../components/Shop/ProductComponent";
 import Cart from "../components/Shop/Cart";
 import Categories from "../components/Shop/Categories";
+import FilterPrice from "../components/Shop/FilterPrice";
 const ShopPage = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const ShopPage = () => {
         <div className="flex flex-col gap-6">
           <Cart />
           <Categories />
+          <FilterPrice />
         </div>
       </div>
     </div>
