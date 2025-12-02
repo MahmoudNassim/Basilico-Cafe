@@ -116,7 +116,7 @@ const Header = () => {
             className={`  ${
               isSticky
                 ? "md:w-[70px] md:h-[70px] "
-                : "lg:w-[130px] lg:h-[130px] xl:h-[150px] xl:w-[150px] md:w-[120px] md:h-[120px] "
+                : "lg:w-[90px] lg:h-[90px] xl:h-[150px] xl:w-[150px] md:w-[116px] md:h-[116px] "
             }  w-[70px] h-[70px] bg-[#FAF1E3]  
         flex justify-center items-center cursor-pointer  rounded-full`}
           >
@@ -127,7 +127,7 @@ const Header = () => {
                 className={` ${
                   isSticky
                     ? "w-[50px] h-[50px]"
-                    : "md:w-[100px] md:h-[100px] w-[50px] h-[50px]  "
+                    : "md:w-[95px] md:h-[95px] lg:w-[70px] lg:h-[70px] xl:w-[110px] xl:h-[110px] w-[50px] h-[50px]  "
                 }    rounded-full `}
               />
             </Link>
