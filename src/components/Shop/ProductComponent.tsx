@@ -100,7 +100,9 @@ const ProductComponent = () => {
           >
             <div
               className={`bg-[#F5F5F5] rounded-2xl relative flex justify-center items-end gap-4 ${
-                row ? "w-[250px] h-[200px]" : "w-[300px] h-[446px]"
+                row
+                  ? "w-[250px] h-[200px]"
+                  : " md:w-[220px] lg:w-[320px] xl:w-[400px] h-[446px]"
               } max-md:w-[300px] 
           group overflow-hidden`}
             >
@@ -135,7 +137,7 @@ const ProductComponent = () => {
             </div>
             <div
               className={`flex  ${
-                row ? "max-md:flex-col" : "flex-col"
+                row ? "max-md:flex-row" : "flex-col"
               } gap-4 justify-center items-center`}
             >
               <div className="flex items-center gap-3">
@@ -157,7 +159,7 @@ const ProductComponent = () => {
                     : el.price?.toFixed(2)}
                 </p>
               </div>
-              <p className="text-[22px] hover:text-[#d1b89b] font-semibold leading-[34px] uppercase transition-all duration-200 cursor-pointer">
+              <p className="text-[18px] text-center md:text-[22px] hover:text-[#d1b89b] font-semibold leading-[34px] uppercase transition-all duration-200 cursor-pointer">
                 {el.name}
               </p>
               <div className="flex text-[#c3a27c] text-[20px]">
