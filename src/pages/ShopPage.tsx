@@ -5,7 +5,6 @@ import Cart from "../components/Shop/Cart";
 import Categories from "../components/Shop/Categories";
 import FilterPrice from "../components/Shop/FilterPrice";
 import RecentProduct from "../components/Shop/RecentProduct";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const ShopPage = () => {
   return (
     <div>

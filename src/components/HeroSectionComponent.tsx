@@ -3,7 +3,6 @@ import cup from "../assets/images/Menu/cup.png";
 import cup2 from "../assets/images/Menu/cup-1.png";
 import wave from "../assets/images/Home/wave.png";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 interface HeroSectionProps {
   title?: string;
